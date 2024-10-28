@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management System</h1>
+        
+        <div class="section">
+            <h2>Add Book</h2>
+            <input type="text" id="bookTitle" placeholder="Book Title">
+            <input type="text" id="bookAuthor" placeholder="Author">
+            <button onclick="addBook()">Add Book</button>
+        </div>
+
+        <div class="section">
+            <h2>Register Member</h2>
+            <input type="text" id="memberName" placeholder="Member Name">
+            <button onclick="registerMember()">Register Member</button>
+        </div>
+
+        <div class="section">
+            <h2>Available Books</h2>
+            <ul id="availableBooksList"></ul>
+        </div>
+
+        <div class="section">
+            <h2>Borrow Book</h2>
+            <input type="text" id="borrowMemberName" placeholder="Member Name">
+            <input type="text" id="borrowBookTitle" placeholder="Book Title">
+            <button onclick="borrowBook()">Borrow Book</button>
+        </div>
+
+        <div class="section">
+            <h2>Return Book</h2>
+            <input type="text" id="returnMemberName" placeholder="Member Name">
+            <input type="text" id="returnBookTitle" placeholder="Book Title">
+            <button onclick="returnBook()">Return Book</button>
+        </div>
+
+        <div class="section">
+            <h2>Borrowed Books</h2>
+            <ul id="borrowedBooksList"></ul>
+        </div>
+
+        <div class="section">
+            <h2>Members</h2>
+            <ul id="membersList"></ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
